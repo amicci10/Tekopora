@@ -1,2 +1,72 @@
-# Tekopora
+# ✨ Tekoporã: O Caminho do Bem Viver e a Luta pelo Tempo
+
+## 🛠️ Sobre o Projeto
+
+Estou realizando este projeto como forma de **treinamento de HTML, CSS e JS** (JavaScript).
+
+Este projeto é uma plataforma digital centrada no conceito Guarani de **Tekoporã** (O Bem Viver ou Modo de Vida Bonito/Correto), que engloba a vida em equilíbrio, harmonia e plenitude. O objetivo é utilizar a tecnologia para dar visibilidade e apoio às lutas do movimento indígena, que busca o Tekoporã através da defesa dos seus territórios e direitos constitucionais.
+
+### **Objetivos Centrais do Projeto (Em Busca do Tekoporã):**
+
+1.  **Fortalecer a união dos povos indígenas, a articulação entre as diferentes regiões e organizações indígenas do país.**
+    * *Recursos técnicos possíveis:* Páginas de contato, diretórios de organizações, e futuramente, mapas interativos.
+2.  **Unificar as lutas dos povos indígenas, a pauta de reivindicações e demandas e a política do movimento indígena.**
+    * *Recursos técnicos possíveis:* Seção de notícias centralizadas, calendário de eventos/mobilizações e área de documentos/reivindicações.
+3.  **Mobilizar os povos e organizações indígenas do país contra as ameaças e agressões aos direitos indígenas.**
+    * *Recursos técnicos possíveis:* Sistemas de alerta ou notificação rápida e formulários de apoio e petições online.
+
+### 🚩 Destaque: Combate ao Marco Temporal
+
+O projeto dedica especial atenção à luta **contra o Marco Temporal**, pois essa tese é uma ameaça direta à possibilidade de se viver o **Tekoporã**.
+
+* Visa informar e educar o público sobre o que é o Marco Temporal e o impacto devastador que sua aprovação traria para a demarcação das Terras Indígenas no Brasil.
+* Serve como um ponto de convergência para recursos de mobilização e manifestação contra esta tese jurídica.
+
+---
+
+## 💻 Tecnologias Utilizadas
+
+Este projeto está sendo desenvolvido utilizando as tecnologias fundamentais do desenvolvimento web:
+
+| Tecnologia | Descrição |
+| :--- | :--- |
+| ✅ **HTML5** | Estruturação e semântica do conteúdo. |
+| ❌ (Em Desenvolvimento) **CSS3** | Estilização, design responsivo e layout visual. |
+| ❌ (Em Desenvolvimento) **JavaScript (JS)** | Implementação de interatividade, manipulação do DOM e lógica da aplicação. |
+
+---
+
+## 🚀 Como Executar o Projeto
+
+1.  **Clone o Repositório:**
+    ```bash
+    git clone [https://github.com/amicci10/Tekopora.git](https://github.com/amici10/Tekopora.git)
+    ```
+2.  **Acesse a Pasta do Projeto:**
+    ```bash
+    cd Tekopora
+    ```
+3.  **Abra o Arquivo:**
+    Simplesmente abra o arquivo `index.html` em seu navegador.
+
+---
+
+## 🤝 Contribuição e Licença
+
+Este é um projeto de aprendizado, mas contribuições são bem-vindas, especialmente aquelas que ajudem a fortalecer a articulação e a defesa dos direitos originários.
+
+1.  Faça o *fork* do projeto.
+2.  Crie uma *branch* para sua funcionalidade (`git checkout -b feature/MinhaFuncionalidade`).
+3.  Faça o *commit* de suas alterações (`git commit -m 'Adiciona MinhaFuncionalidade'`).
+4.  Faça o *push* para a *branch* (`git push origin feature/MinhaFuncionalidade`).
+5.  Abra um *Pull Request*.
+
+### Licença
+
+Este projeto está sob a **Licença MIT**. Veja o arquivo `LICENSE` para mais detalhes.
+
+---
+
+**Desenvolvido por:** [AMICCI10/GitHub]
+
 
