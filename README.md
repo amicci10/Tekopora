@@ -1,5 +1,3 @@
-✨ Tekoporã: O Caminho do Bem Viver e a Luta pelo Tempo
-=======
 # ✨ Tekoporã: O Caminho do Bem Viver e a Luta pelo Tempo
 
 ## 🛠️ Sobre o Projeto
