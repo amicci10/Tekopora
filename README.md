@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ✨ Tekoporã: O Caminho do Bem Viver e a Luta pelo Tempo
 🛠️ Sobre o Projeto
 Estou realizando este projeto como forma de treinamento de HTML, CSS e JS (JavaScript).
