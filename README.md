@@ -46,15 +46,10 @@ Este projeto faz parte do curso de Análise e Desenvolvimento de Sistemas, focan
 
 Este é um projeto de aprendizado, mas contribuições são bem-vindas, especialmente aquelas que ajudem a fortalecer a articulação e a defesa dos direitos originários.
 
-1.  Faça o *fork* do projeto.
-2.  Crie uma *branch* para sua funcionalidade (`git checkout -b feature/MinhaFuncionalidade`).
-3.  Faça o *commit* de suas alterações (`git commit -m 'Adiciona MinhaFuncionalidade'`).
-4.  Faça o *push* para a *branch* (`git push origin feature/MinhaFuncionalidade`).
-5.  Abra um *Pull Request*.
 
 ### Licença
 
-Este projeto está sob a **Licença MIT**. Veja o arquivo `LICENSE` para mais detalhes.
+Este projeto está sendo desenvolvido para fins academicos e não possui fins lucrativos. Veja o arquivo `LICENSE` para mais detalhes.
 
 ---
 
