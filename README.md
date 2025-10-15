@@ -36,18 +36,9 @@ Este projeto está sendo desenvolvido utilizando as tecnologias fundamentais do 
 
 ---
 
-## 🚀 Como Executar o Projeto
+## 🚀 Contexto Academico
 
-1.  **Clone o Repositório:**
-    ```bash
-    git clone [https://github.com/amicci10/Tekopora.git](https://github.com/amici10/Tekopora.git)
-    ```
-2.  **Acesse a Pasta do Projeto:**
-    ```bash
-    cd Tekopora
-    ```
-3.  **Abra o Arquivo:**
-    Simplesmente abra o arquivo `index.html` em seu navegador.
+Este projeto faz parte do curso de Análise e Desenvolvimento de Sistemas, focando na aplicação prática dos fundamentos de desenvolvimento web frontend aprendidos na disciplina.
 
 ---
 
