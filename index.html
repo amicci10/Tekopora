@@ -3,9 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tekoporã</title>
+    <title>Projeto Unidade 1: Tekoporã - HTML Básico</title>
 </head>
 <body>
+
+    <!-- 
+        PARTE 1: ESTRUTURA SEMÂNTICA - <header> (Cabeçalho da Página) 
+    -->
+    <header>
+        <!-- HIERARQUIA DE TÍTULOS: H1 é o título principal da plataforma. -->
+        <h1>Tekoporã: Articulação Originária</h1>
+        
+        <!-- ELEMENTO SEMÂNTICO: <nav> para navegação principal. Links para os arquivos reais. -->
+        <nav role="navigation" aria-label="Menu Principal do Site">
+            <ul style="list-style: square; padding-left: 20px;">
+                <li><a href="index.html">Início (index.html)</a></li>
+                <li><a href="projetos.html">Projetos Sociais (projetos.html)</a></li>
+                <li><a href="cadastro.html">Cadastre-se (cadastro.html)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 
+        PARTE 2: CONTEÚDO PRINCIPAL - <main> 
+    -->
+    <main>
+
+        <!-- 
+            PÁGINA 1: INÍCIO (index.html) - Conteúdo sobre a Organização e Contato
+            Uso <section> para agrupar o conteúdo principal da página.
+        -->
+        <section id="home">
+            <!-- HIERARQUIA DE TÍTULOS: H2 para o título da seção/página. -->
+            <h2 id="home-title">
+                O Movimento Tekoporã: Pelo Bem Viver Originário
+            </h2>
+            
+            <!-- ELEMENTO SEMÂNTICO: <article> para conteúdo independente. -->
+            <article>
+                <!-- HIERARQUIA DE TÍTULOS: H3 para subtítulos. -->
+                <h3>Nossa Missão:</h3>
+
     
+                <p>
+                    O <strong>Tekoporã</strong> significa "Modo de Vida Correto" ou "Bem Viver" em Guarani. Dedicamo-nos a articular e fortalecer as comunidades indígenas contra ameaças a sua cultura e territórios, como o Marco Temporal.
+                </p>
+
+                <p><strong>Promover a União:</strong>Fortalecer os laços e a troca de saberes entre diferentes etnias e regiões, unificando a grande luta indígena.</p>
+            
+                <p><strong>Unificar a Pauta:</strong> Centralizar as reivindicações e demandas, garantindo que as políticas do movimento indígena sejam claras e poderosas.</p>
+
+                <p><strong>Combater Ameaças:</strong>Atuar ativamente na mobilização contra agressões aos direitos originários, com foco prioritário na tese do Marco Temporal, que ameaça a própria existência e os territórios de incontáveis comunidades.</p>
+
+                <p>Garantir o direito à terra é garantir o <strong>Tekoporã</strong> para as futuras gerações.</p>
+
+                
+                <img src="Tekoporã, pela paz indígena.PNG" alt="Povo Indígena representando sua cultura">
+
+                <h3>Informações de Contato</h3>
+                <!-- Endereço (address) para informações de contato. -->
+                <address>
+                    <p><strong>E-mail:</strong> contato@tekopora.org.br</p>
+                    <p><strong>Telefone:</strong> (11) 97299-9946</p>
+                    <p><strong>Endereço Sede:</strong> Articulação Pataxó, São Paulo - SP (Fictício)</p>
+                </address>
+            </article>
+            
+            <!-- ELEMENTO MULTIMÍDIA SEMÂNTICO: <figure> para a imagem. -->
+            <figure>
+                <img 
+                    src="aldeia pataxo.png" 
+                    alt="Imagem que representa a união e a resistência de povos indígenas." 
+                    style="max-width: 100%; height: auto;"
+                >
+                <!-- ELEMENTO SEMÂNTICO: <figcaption> para a legenda da imagem. -->
+                <figcaption>
+                    Imagem para ilustrar a sede.
+                </figcaption>
+            </figure>
+        </section>
+        
+    </main>
+
+    <!-- 
+        PARTE 3: ESTRUTURA SEMÂNTICA - <footer> (Rodapé da Página) 
+    -->
+    <footer>
+        <p>&copy; Tekoporã 2025 Projeto de Treinamento HTML5.</p>
+    </footer>
+
+
 </body>
 </html>

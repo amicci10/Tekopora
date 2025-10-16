@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekoporã - Cadastro</title>
+</head>
+<body>
+
+    
+    <!-- 
+        PARTE 1: ESTRUTURA SEMÂNTICA - <header> (Cabeçalho da Página) 
+    -->
+    <header>
+        <!-- HIERARQUIA DE TÍTULOS: H1 é o título principal da plataforma. -->
+        <h1>Tekoporã: Articulação Originária</h1>
+        
+        <!-- ELEMENTO SEMÂNTICO: <nav> para navegação principal. Links para os arquivos reais. -->
+        <nav role="navigation" aria-label="Menu Principal do Site">
+            <ul style="list-style: square; padding-left: 20px;">
+                <li><a href="index.html">Início (index.html)</a></li>
+                <li><a href="projetos.html">Projetos Sociais (projetos.html)</a></li>
+                <li><a href="cadastro.html">Cadastre-se (cadastro.html)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 
+        PARTE 2: CONTEÚDO PRINCIPAL - <main> 
+    -->
+    <main>
+
+        <!-- 
+            PÁGINA 3: CADASTRO (cadastro.html) - Formulário Complexo
+        -->
+        <section id="cadastro">
+            <!-- HIERARQUIA DE TÍTULOS: H2 para o título da seção/página. -->
+            <h2 id="cadastro-title">
+                Formulário de Cadastro
+            </h2>
+
+            <img src="caboclo pena brana.jpg" alt="">
+            <p>
+                Preencha seus dados para se juntar à rede.
+            </p>
+
+            <!-- FORMULÁRIO COM AGRUPAMENTO LÓGICO E VALIDAÇÃO NATIVA -->
+            <form id="cadastroForm">
+                
+                <!-- AGRUPAMENTO LÓGICO 1: Dados Pessoais - Uso do <fieldset> e <legend> -->
+                <fieldset>
+                    <legend>Parte 1: Dados Pessoais</legend>
+                    
+                    <div>
+                        <label for="nome">Nome Completo *</label>
+                        <!-- Requisito: Input de Texto Básico com Validação Nativa -->
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required style="width: 100%; padding: 8px;">
+                    </div>
+                    
+                    <div>
+                        <label for="email">E-mail *</label>
+                        <!-- Requisito: Input Type EMAIL com Validação Nativa -->
+                        <input type="email" id="email" name="email" placeholder="nome@exemplo.com" required style="width: 100%; padding: 8px;">
+                    </div>
+                    
+                    <div>
+                        <label for="cpf">CPF *</label>
+                        <!-- Requisito: Input com PATTERN (Máscara simulada) e MAXLENGTH -->
+                        <input type="text" id="cpf" name="cpf" placeholder="999.999.999-99" required 
+                               pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
+                               title="O CPF deve estar no formato 999.999.999-99" maxlength="14" style="width: 100%; padding: 8px;">
+                    </div>
+                    
+                    <div>
+                        <label for="telefone">Telefone *</label>
+                        <!-- Requisito: Input Type TEL com PATTERN (Máscara simulada) -->
+                        <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" required 
+                               pattern="\(\d{2}\) \d{4,5}-\d{4}" 
+                               title="O telefone deve estar no formato (99) 99999-9999" maxlength="15" style="width: 100%; padding: 8px;">
+                    </div>
+
+                    <div>
+                        <label for="nascimento">Data de Nascimento *</label>
+                        <!-- Requisito: Input Type DATE com Validação Nativa -->
+                        <input type="date" id="nascimento" name="nascimento" required style="width: 100%; padding: 8px;">
+                    </div>
+                </fieldset>
+
+                <!-- AGRUPAMENTO LÓGICO 2: Endereço - Uso do <fieldset> e <legend> -->
+                <fieldset>
+                    <legend>Parte 2: Endereço</legend>
+                    
+                    <div>
+                        <label for="cep">CEP *</label>
+                        <!-- Requisito: Input com PATTERN (Máscara simulada) -->
+                        <input type="text" id="cep" name="cep" placeholder="99999-999" required 
+                               pattern="\d{5}-\d{3}" 
+                               title="O CEP deve estar no formato 99999-999" maxlength="9" style="width: 100%; padding: 8px;">
+                    </div>
+                    
+                    <div>
+                        <label for="endereco">Endereço (Rua e Número) *</label>
+                        <input type="text" id="endereco" name="endereco" placeholder="Rua, número e complemento" required style="width: 100%; padding: 8px;">
+                    </div>
+                    
+                    <div>
+                        <label for="cidade">Cidade *</label>
+                        <input type="text" id="cidade" name="cidade" required style="width: 100%; padding: 8px;">
+                    </div>
+
+                    <div>
+                        <label for="estado">Estado (UF) *</label>
+                        <input type="text" id="estado" name="estado" maxlength="2" placeholder="Ex: SP" required style="width: 100%; padding: 8px;">
+                    </div>
+                    
+                    <div>
+                        <label for="complemento">Complemento (Não obrigatório)</label>
+                        <input type="text" id="complemento" name="complemento" placeholder="Apto, Bloco, etc." style="width: 100%; padding: 8px;">
+                    </div>
+                </fieldset>
+
+                <!-- Botão de Envio Básico -->
+                <button type="submit" style="width: 100%; padding: 10px; cursor: pointer;">
+                    Mandar Dados do Cadastro!
+                </button>
+            </form>
+            
+        </section>
+        
+    </main>
+
+    <!-- 
+        PARTE 3: ESTRUTURA SEMÂNTICA - <footer> (Rodapé da Página) 
+    -->
+    <footer>
+        <p>&copy; Tekoporã 2025 Projeto de Treinamento HTML5.</p>
+    </footer>
+    
+</body>
+</html>
