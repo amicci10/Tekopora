@@ -1,0 +1,389 @@
+/* ========================================================= */
+/* 2. ESTRUTURA BASE, TIPOGRAFIA E RESET                     */
+/* ========================================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family-base);
+    color: var(--color-neutral-dark);
+    background-color: var(--color-neutral-light);
+    line-height: 1.6;
+}
+
+h1 { font-size: var(--font-size-xl); color: var(--color-primary-dark); }
+h2 { font-size: var(--font-size-lg); color: var(--color-primary-base); padding-bottom: var(--spacing-2x); border-bottom: 2px solid var(--color-secondary-base); margin-bottom: var(--spacing-3x); }
+h3 { font-size: var(--font-size-md); color: var(--color-primary-dark); margin-top: var(--spacing-3x); margin-bottom: var(--spacing-2x); }
+p { margin-bottom: var(--spacing-2x); }
+
+a { color: var(--color-primary-base); text-decoration: none; transition: color var(--transition-duration); }
+a:hover { color: var(--color-primary-dark); }
+img { max-width: 100%; height: auto; border-radius: var(--border-radius-base); }
+
+
+/* ========================================================= */
+/* 3. LEIAUTE PRINCIPAL COM GRID E FLEXBOX                   */
+/* ========================================================= */
+
+/* Implementar leiaute principal usando CSS grid para estrutura geral */
+body {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto; 
+    min-height: 100vh;
+}
+
+main { 
+    grid-area: main; 
+    padding: var(--spacing-4x) var(--spacing-2x); 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    width: 100%; 
+}
+
+/* Criar sistema de grid customizado (12 colunas) */
+.grid-12-cols {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--spacing-3x);
+}
+
+/* Utilizar flexbox para componentes internos e alinhamentos */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: var(--spacing-4x);
+    margin-top: var(--spacing-4x);
+}
+
+.flex-container > article {
+    /* Base de 45% permite duas colunas com espaço entre elas */
+    flex: 1 1 45%; 
+    padding: var(--spacing-3x);
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-base);
+    box-shadow: var(--shadow-base);
+}
+
+
+/* ========================================================= */
+/* 4. NAVEGAÇÃO SOFISTICADA E INTERATIVA                     */
+/* ========================================================= */
+
+header {
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+    padding: var(--spacing-3x) var(--spacing-2x);
+    position: relative; /* Necessário para o menu hambúrguer */
+}
+
+header h1 {
+    color: var(--color-white);
+    text-align: center;
+}
+
+/* Cria menu principal responsivo */
+nav ul {
+    list-style: none !important; 
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+    gap: var(--spacing-4x); 
+    margin-top: var(--spacing-2x);
+}
+
+nav a {
+    color: var(--color-white);
+    font-weight: bold;
+    padding: var(--spacing-1x) var(--spacing-2x);
+    transition: background-color var(--transition-duration);
+    border-radius: var(--border-radius-base);
+}
+
+nav a:hover, .active-link {
+    background-color: var(--color-secondary-base);
+    color: var(--color-neutral-dark) !important;
+}
+
+/* Menu Hambúrguer (Oculto em desktop) */
+.menu-toggle {
+    display: none;
+    position: absolute;
+    top: var(--spacing-3x);
+    right: var(--spacing-3x);
+    cursor: pointer;
+    font-size: var(--font-size-lg);
+    color: var(--color-white);
+    z-index: 100;
+}
+
+/* Simulação de Dropdown/Submenu (Usando :hover) */
+/* Você deve envolver o li com uma classe para usar o dropdown */
+.dropdown-menu {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--color-primary-base);
+    min-width: 160px;
+    box-shadow: var(--shadow-base);
+    z-index: 10;
+    top: 100%;
+    left: 0;
+    border-radius: 0 0 var(--border-radius-base) var(--border-radius-base);
+    padding: 0;
+}
+
+.dropdown-content a {
+    color: var(--color-white);
+    padding: var(--spacing-1x) var(--spacing-2x);
+    display: block;
+    text-align: left;
+}
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+}
+
+
+/* ========================================================= */
+/* 5. COMPONENTES DE INTERFACE                               */
+/* ========================================================= */
+
+/* Desenvolver sistema de cards responsivos para projetos */
+.card {
+    background-color: var(--color-white);
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius-base);
+    overflow: hidden;
+    box-shadow: var(--shadow-base);
+    transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: var(--spacing-3x);
+}
+
+/* Criar botões com estados visuais (hover, focus, active, disabled) */
+.btn {
+    padding: var(--spacing-2x) var(--spacing-3x);
+    border: none;
+    border-radius: var(--border-radius-base);
+    cursor: pointer;
+    font-weight: bold;
+    transition: all var(--transition-duration);
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    margin-top: var(--spacing-2x);
+}
+
+.btn-primary {
+    background-color: var(--color-secondary-base);
+    color: var(--color-neutral-dark);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--color-secondary-dark);
+    box-shadow: 0 0 0 3px rgba(255, 179, 0, 0.5); /* Focus Ring */
+    outline: none;
+}
+
+.btn-primary:active {
+    background-color: var(--color-secondary-dark);
+    transform: scale(0.98);
+}
+
+.btn-primary:disabled {
+    background-color: var(--color-neutral-base);
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Implementar formulários estilizados com validação visual */
+.fieldset {
+    border: 1px solid #ccc;
+    padding: var(--spacing-4x);
+    margin-bottom: var(--spacing-4x);
+    border-radius: var(--border-radius-base);
+}
+
+.fieldset legend {
+    font-weight: bold;
+    color: var(--color-primary-dark);
+    padding: 0 var(--spacing-2x);
+    font-size: var(--font-size-md);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-3x);
+}
+
+label {
+    display: block;
+    margin-bottom: var(--spacing-1x);
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+    color: var(--color-neutral-base);
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]), textarea {
+    width: 100%;
+    padding: var(--spacing-2x);
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius-base);
+    transition: border-color var(--transition-duration), box-shadow var(--transition-duration);
+}
+
+input:focus, textarea:focus {
+    border-color: var(--color-primary-base);
+    box-shadow: 0 0 0 3px rgba(0, 137, 123, 0.2);
+    outline: none;
+}
+
+/* Validação Visual (Estilos para campos inválidos que são obrigatórios) */
+input:not(:focus):required:invalid {
+    border-color: var(--color-error);
+    box-shadow: 0 0 0 2px rgba(244, 67, 54, 0.2);
+}
+
+
+/* Desenvolver componentes de feedback (alerts) */
+.alert {
+    padding: var(--spacing-3x);
+    margin-bottom: var(--spacing-3x);
+    border-radius: var(--border-radius-base);
+    font-weight: 600;
+    border-left: 5px solid;
+}
+
+.alert-success { background-color: rgba(76, 175, 80, 0.1); color: var(--color-success); border-color: var(--color-success); }
+.alert-error { background-color: rgba(244, 67, 54, 0.1); color: var(--color-error); border-color: var(--color-error); }
+.alert-info { background-color: rgba(33, 150, 243, 0.1); color: var(--color-info); border-color: var(--color-info); }
+.alert-warning { background-color: rgba(255, 152, 0, 0.1); color: var(--color-warning); border-color: var(--color-warning); }
+
+
+/* Criar sistema de badges e tags para categorização */
+.badge {
+    display: inline-block;
+    padding: var(--spacing-1x) var(--spacing-2x);
+    font-size: var(--font-size-sm);
+    font-weight: bold;
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin-right: var(--spacing-1x);
+    line-height: 1; /* Alinhamento visual */
+}
+
+.badge-territorio { background-color: var(--color-primary-light); color: var(--color-neutral-dark); }
+.badge-social { background-color: var(--color-secondary-base); color: var(--color-neutral-dark); }
+.badge-urgente { background-color: var(--color-error); color: var(--color-white); }
+
+
+/* ========================================================= */
+/* 6. MEDIA QUERIES E BREAKPOINTS RESPONSIVOS                */
+/* (Mínimo 5 Breakpoints)                                    */
+/* ========================================================= */
+
+/* Breakpoint 1: Mobile Pequeno (Até 480px) */
+@media (max-width: 480px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    main { padding: var(--spacing-3x) var(--spacing-1x); }
+    
+    /* Leitura melhor em telas muito pequenas */
+    .grid-12-cols { grid-template-columns: 1fr; }
+}
+
+/* Breakpoint 2: Mobile (Até 600px) */
+@media (max-width: 600px) {
+    /* Implementar navegação mobile com menu hambúrguer */
+    .menu-toggle { display: block; }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: var(--spacing-1x);
+        margin-top: 0;
+        /* Oculta a navegação no mobile por padrão (seria ativada por JS, mas usamos CSS-only para demonstração) */
+        /* Para testes, adicione a classe 'menu-open' ao nav no HTML para ver o menu */
+        display: none; 
+    }
+    
+    /* Classe a ser adicionada no nav para mostrar o menu mobile (se JS fosse usado) */
+    nav.menu-open ul {
+        display: flex;
+    }
+    
+    nav a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: var(--spacing-1x) 0;
+    }
+    
+    /* Layout Flexbox/Grid em uma única coluna */
+    .flex-container > article {
+        flex: 1 1 100%; 
+    }
+    .grid-12-cols { grid-template-columns: 1fr; }
+}
+
+/* Breakpoint 3: Tablet Portrait (768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    /* Layout com 2 colunas */
+    .flex-container > article {
+        flex: 1 1 calc(50% - var(--spacing-2x));
+    }
+    .grid-12-cols {
+        grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    }
+}
+
+/* Breakpoint 4: Tablet Landscape/Desktop Pequeno (1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    main { padding: var(--spacing-4x) var(--spacing-3x); }
+    .grid-12-cols {
+        grid-template-columns: repeat(8, 1fr); /* 8 colunas */
+    }
+}
+
+/* Breakpoint 5: Desktop Grande (1200px e acima) */
+@media (min-width: 1025px) {
+    .grid-12-cols {
+        grid-template-columns: repeat(12, 1fr); /* 12 colunas */
+    }
+}
+
+/* ========================================================= */
+/* 7. RODAPÉ                                                 */
+/* ========================================================= */
+footer {
+    grid-area: footer;
+    background-color: var(--color-neutral-dark);
+    color: var(--color-neutral-light);
+    text-align: center;
+    padding: var(--spacing-2x) 0;
+    font-size: var(--font-size-sm);
+}

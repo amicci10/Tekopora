@@ -1,0 +1,58 @@
+/* ========================================================= */
+/* 1. SISTEMA DE DESIGN: VARIÁVEIS CSS CUSTOMIZADAS          */
+/* ========================================================= */
+
+/* PALETA DE CORES (Mínimo 8 cores) */
+:root {
+    /* Primárias (Inspiração: Terra e Floresta) */
+    --color-primary-dark: #004d40;    /* Verde Floresta Escuro */
+    --color-primary-base: #00897b;    /* Verde Água */
+    --color-primary-light: #4db6ac;   /* Menta */
+
+    /* Secundárias (Inspiração: Sol e Destaque) */
+    --color-secondary-dark: #f9a825;  /* Amarelo Ouro */
+    --color-secondary-base: #ffb300;  /* Amarelo Destaque */
+    --color-secondary-light: #ffecb3; /* Amarelo Claro */
+
+    /* Neutras */
+    --color-neutral-dark: #333333;    /* Preto Texto */
+    --color-neutral-base: #666666;    /* Cinza Base */
+    --color-neutral-light: #f4f4f4;   /* Fundo Claro */
+    --color-white: #ffffff;           /* Branco */
+
+    /* Cores de Feedback */
+    --color-success: #4caf50;
+    --color-error: #f44336;
+    --color-info: #2196f3;
+    --color-warning: #ff9800;
+}
+
+/* TIPOGRAFIA HIERÁRQUICA (Mínimo 5 tamanhos) */
+:root {
+    --font-family-base: 'Arial', sans-serif;
+
+    /* Tamanhos (em rem para escalabilidade) */
+    --font-size-xxl: 3.5rem;   /* Para grandes títulos em desktop */
+    --font-size-xl: 2.5rem;    /* H1 */
+    --font-size-lg: 1.8rem;    /* H2 */
+    --font-size-md: 1.4rem;    /* H3 */
+    --font-size-base: 1rem;    /* Padrão (p, li, etc) */
+    --font-size-sm: 0.875rem;  /* Captions, labels */
+}
+
+/* SISTEMA DE ESPAÇAMENTO MODULAR (Base 8px, múltiplos de 8) */
+:root {
+    --spacing-1x: 8px;     /* 8px */
+    --spacing-2x: 16px;    /* 16px */
+    --spacing-3x: 24px;    /* 24px */
+    --spacing-4x: 32px;    /* 32px */
+    --spacing-6x: 48px;    /* 48px */
+    --spacing-8x: 64px;    /* 64px */
+}
+
+/* Outras Variáveis Comuns */
+:root {
+    --border-radius-base: 4px;
+    --transition-duration: 0.3s;
+    --shadow-base: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
