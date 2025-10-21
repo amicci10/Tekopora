@@ -31,7 +31,7 @@ Este projeto está sendo desenvolvido utilizando as tecnologias fundamentais do 
 | Tecnologia | Descrição |
 | :--- | :--- |
 | ✅ **HTML5** | Estruturação e semântica do conteúdo. |
-| ❌ (Em Desenvolvimento) **CSS3** | Estilização, design responsivo e layout visual. |
+| ✅ **CSS3** | Estilização, design responsivo e layout visual. |
 | ❌ (Em Desenvolvimento) **JavaScript (JS)** | Implementação de interatividade, manipulação do DOM e lógica da aplicação. |
 
 ---
